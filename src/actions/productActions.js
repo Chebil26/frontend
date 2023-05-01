@@ -42,7 +42,7 @@ export const listProducts = (keyword = '') => async (dispatch) => {
         dispatch({type: PRODCUT_LIST_REQUEST })
         console.log(keyword)
 
-        const { data } = await axios.get(`/api/products${keyword}`)
+        const { data } = await axios.get(`https://adeem-2se9.onrender.com/api/products${keyword}`)
 
         dispatch({
             type: PRODCUT_LIST_SUCCSESS,
