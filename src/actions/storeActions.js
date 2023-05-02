@@ -21,7 +21,7 @@ export const listStores = (keyword = '') => async (dispatch) => {
     try{
         dispatch({type: STORE_LIST_REQUEST })
 
-        const { data } = await axios.get(`https://adeem-2se9.onrender.com/api/stores/`)
+        const { data } = await axios.get(`/api/stores/`)
 
         dispatch({
             type: STORE_LIST_SUCCSESS,
